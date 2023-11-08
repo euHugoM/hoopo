@@ -10,10 +10,10 @@ count.addEventListener('click', function (event){
     let voices = speechSynthesis.getVoices()
     utterance.voice = voices[10]
     if (value <= 107){
+        value++;
         if(value > 1 && value % 10 === 0){
             speechSynthesis.speak(utterance)
         }
-        value++;
         navigator.vibrate(100);
         count.innerHTML = value;
     } else{
