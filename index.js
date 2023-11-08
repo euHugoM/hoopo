@@ -10,9 +10,7 @@ count.addEventListener('click', function (event){
         count.innerHTML = value;
     } else{
         count.innerHTML = "Ho'opo";
-        navigator.vibrate(100);
-        navigator.vibrate(100);
-        navigator.vibrate(100);
+        navigator.vibrate([100, 200, 100, 50, 10])
     }
 });
 
