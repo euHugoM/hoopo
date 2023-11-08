@@ -6,7 +6,7 @@ let value = 0
 
 
 count.addEventListener('click', function (event){
-    const utterance = new SpeechSynthesisUtterance(value)
+    const utterance = new SpeechSynthesisUtterance(value + 1)
     let voices = speechSynthesis.getVoices()
     utterance.voice = voices[10]
     if (value <= 107){
