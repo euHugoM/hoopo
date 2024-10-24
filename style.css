@@ -77,4 +77,13 @@
     /* position: absolute;
     bottom: 30px; */
   }
+
+  #volume{
+    opacity: 50%;
+    transition: ease-in-out .3s;
+  }
+
+  #volume:hover{
+    opacity: 100%;
+  }
 }
