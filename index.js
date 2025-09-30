@@ -10,9 +10,9 @@ const audio = new Audio('mindfulness.mp3')
 count.addEventListener('click', function (event){
     const utterance = new SpeechSynthesisUtterance(value + 1)
     let voices = speechSynthesis.getVoices()
-    utterance.voice = voices[1]
+    utterance.voice = voices[2]
     if (value <= 107){
-        value++;
+        value++
         if(value > 1 && value % 10 === 0){
             speechSynthesis.speak(utterance)
         }
